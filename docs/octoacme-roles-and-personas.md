@@ -1,81 +1,73 @@
-# OctoAcme Personas
+# OctoAcme — Roles and Personas
 
-This document defines typical roles and responsibilities used in OctoAcme project docs and exercises.
+This document lists the roles and personas involved in OctoAcme projects and describes responsibilities and interactions to ensure clarity and accountability.
 
----
-
-## Developers
-
-### Role Summary
-Developers design, build, test, and deliver software components. They collaborate with product and project leads to implement features that meet acceptance criteria and quality standards.
-
-### Responsibilities
-- Implement features and fixes to meet acceptance criteria
-- Write and maintain tests and documentation
-- Participate in design and code reviews
-- Assist in estimating and planning work
-- Help identify technical risks and propose mitigations
-
-### Goals
-- Deliver reliable, maintainable code
-- Reduce cycle time from idea to production
-- Maintain high test coverage and observability
-
-### Typical Communication
-- Daily standups and sprint planning
-- PR descriptions and code review comments
-- Technical design docs when needed
+## Existing roles
+(Keep existing role definitions here — do not remove.)
 
 ---
 
-## Product Managers
+## Additional personas and roles (proposed additions)
 
-### Role Summary
-Product Managers define what should be built to deliver customer and business value. They own the product vision, prioritize the backlog, and measure outcomes.
+### Change Manager
+Responsibilities:
+- Own the change control lifecycle for project-level process or scope changes.
+- Receive, triage, and log change requests.
+- Coordinate impact analysis with Project Lead, Technical Lead, and QA Lead.
+- Facilitate approval workflows and ensure decisions are documented.
+- Communicate approved changes, timelines, and expected impacts to stakeholders.
 
-### Responsibilities
-- Define problem statements and success metrics
-- Prioritize the roadmap and backlog
-- Collaborate with stakeholders and engineering on trade-offs
-- Validate solutions through user research and metrics
+Interactions:
+- Works with Project Lead to understand scope and schedule impacts.
+- Coordinates with Technical Lead and QA Lead for technical and testing implications.
+- Notifies Stakeholder Engagement Coordinator to update external communications.
+- Escalates risks to Program or Portfolio Manager when changes affect multiple projects.
 
-### Goals
-- Maximize customer value and impact
-- Make clear, data-driven prioritization decisions
-- Ensure product-market fit and usability
+When to involve:
+- Any change that affects scope, schedule, budget, or major deliverables.
 
-### Typical Communication
-- Weekly alignment with PM and engineering leads
-- Roadmap updates and stakeholder briefings
-- Acceptance criteria and feature specs
+### Quality Assurance Lead (QA Lead)
+Responsibilities:
+- Define and maintain project quality standards and acceptance criteria.
+- Produce and maintain test plans, test cases, and QA checklists for releases.
+- Coordinate testing cycles, defect tracking, and release readiness verification.
+- Provide objective release gating recommendations based on test outcomes.
+
+Interactions:
+- Works with Technical Lead for test environments and automation.
+- Provides criteria and evidence to Project Lead and Release Manager for release decisions.
+- Collaborates with Change Manager to evaluate the testing impact of proposed changes.
+
+When to involve:
+- During planning (define quality strategy), execution (manage testing), and release (verify readiness).
+
+### Stakeholder Engagement Coordinator
+Responsibilities:
+- Identify and maintain the stakeholder register (who needs what and when).
+- Create and manage stakeholder communication plans.
+- Collect stakeholder feedback and escalate actionable items to Project Lead.
+- Ensure stakeholder-facing artifacts (status reports, release notes) are timely and accurate.
+
+Interactions:
+- Works closely with Project Lead and Change Manager to align communications with project changes.
+- Coordinates with QA Lead for stakeholder QA updates when appropriate.
+- Serves as primary point-of-contact for stakeholder queries and feedback loops.
+
+When to involve:
+- From project initiation through closure, and during any stakeholder-impacting change.
 
 ---
 
-## Project Managers
+## Role interaction examples
 
-### Role Summary
-Project Managers coordinate delivery activities, manage schedules, risks, and communications. They enable the team to deliver on commitments efficiently.
-
-### Responsibilities
-- Create and maintain project plans and timelines
-- Manage risks, dependencies, and resource constraints
-- Facilitate meetings (kickoff, planning, retrospectives)
-- Ensure consistent project documentation and status reporting
-- Coordinate cross-team and stakeholder communication
-
-### Goals
-- Deliver projects on time and within scope
-- Minimize unplanned work and escalations
-- Maintain transparency and alignment across stakeholders
-
-### Typical Communication
-- Weekly status updates and stakeholder reports
-- Risk registers and decision logs
-- Coordination via project boards and meeting facilitation
+- Change request scenario: A change is proposed → Change Manager logs request → Impact analysis by Technical Lead & QA Lead → Project Lead schedules decision meeting → If approved, Change Manager updates plan and notifies Stakeholder Engagement Coordinator to inform stakeholders.
+- Release scenario: QA Lead runs release verification → QA Lead reports results to Project Lead and Release Manager → Stakeholder Engagement Coordinator prepares release communications.
 
 ---
 
-## How these personas are used in the exercise
-- Use these persona definitions to frame scenarios and sample interactions in the Skills Exercise.
-- Each persona can be used as a persona prompt for Copilot Spaces to shape role-specific guidance.
+## Acceptance criteria for role updates
+- Each role has clear responsibilities and escalation paths.
+- Role interactions document common workflows (e.g., change request, release, incident).
+- Templates/checklists exist for recurring activities (change request, QA gating, stakeholder comms).
 
+(End of additions.)
